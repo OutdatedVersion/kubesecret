@@ -28,13 +28,13 @@ fn main() {
       std::process::exit(1);
     }
 
-    print!("{}", b64_encoded_json_value_to_string(&secret_data[secret_key]));
+    println!("{}", b64_encoded_json_value_to_string(&secret_data[secret_key]));
     std::process::exit(0);
   }
 
   for entry in secret_data.entries() {
     let value = b64_encoded_json_value_to_string(entry.1);
-    print!("{}: {}", entry.0, value);
+    println!("{}: {}", entry.0, value);
   }
 }
 
