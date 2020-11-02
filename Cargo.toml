@@ -1,0 +1,13 @@
+[package]
+name = "kubesecret"
+version = "0.1.0"
+authors = ["Ben Watkins <ben@outdatedversion.com>"]
+edition = "2018"
+"description" = "Utility to quickly view Kubernetes secrets"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+json = "0.12.4"
+base64 = "0.13.0"
+clap = "2.33.3"
